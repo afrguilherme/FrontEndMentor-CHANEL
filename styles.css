@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: unset;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 1440px;
+  height: 620px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  display: flex;
+  width: 270px;
+  height: 400px;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.box-image {
+  border-radius: 10px 0 0 10px;
+  width: 270px;
+  height: 400px;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 270px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0;
+}
+
+.form {
+  height: 200px;
+  width: 200px;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 10px;
+}
+
+.p-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+}
+
+.p-perfume {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+}
+
+.price {
+  height: 30px;
+  display: flex;
+  margin: 30px 30px 0 35px;
+}
+
+.new-price {
+  font-family: "Fraunces", sans-serif;
+  font-size: 28px;
+  margin-right: 20px;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  line-height: 35px;
+  font-size: 12px;
+}
+
+.button-div {
+  margin: auto;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  line-height: 22px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
+button img {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: hsl(158, 37%, 25%);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .box1 {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    width: 280px;
+    overflow: hidden;
+  }
+
+  .box-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: flex;
+  }
+
+  .box2 {
+    width: 280px;
+    border-radius: 0 0 10px 10px;
+  }
+}
